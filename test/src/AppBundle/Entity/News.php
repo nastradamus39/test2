@@ -50,6 +50,13 @@ class News
     private $sort;
 
     /**
+     * @var \DateTime
+     *
+     * @ORM\Column(name="adddate", type="datetime", options={"default": 0})
+     */
+    private $adddate;
+
+    /**
      * Get id
      *
      * @return integer 
