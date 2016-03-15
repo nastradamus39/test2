@@ -1,0 +1,11 @@
+acme_public:
+    resource: "@AcmePublicBundle/Resources/config/routing.yml"
+    prefix:   /
+
+acme_api:
+    resource: "@AcmeApiBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation

@@ -1,0 +1,11 @@
+acme_api_homepage:
+    pattern:  /api/v1/news
+    defaults: { _controller: AcmeApiBundle:Default:index, _format: ~ }
+    requirements:
+        _method: GET
+
+newspage:
+    pattern:  /api/v1/news/{id}
+    defaults: { _controller: AcmeApiBundle:Default:detail, _format: ~ }
+    requirements:
+        _method: GET
